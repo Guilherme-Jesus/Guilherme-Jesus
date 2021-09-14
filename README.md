@@ -1,4 +1,4 @@
-### Olá eu Guilherme Jesus
+### Olá eu sou Guilherme Jesus
 
  <div>
   <a href="https://github.com/Guilherme-Jesus">
