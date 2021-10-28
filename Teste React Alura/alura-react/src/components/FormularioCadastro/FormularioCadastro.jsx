@@ -2,16 +2,15 @@ import React, { Component } from "react";
 import "./style.css";
 class FormularioCadastro extends Component {
 
-
-  constructor(){
-    super()
+  constructor(props){
+    super(props)
     this.titulo ="";
     this.texto ="";
   }
   _handleMudancaTitle(event){
     event.stopPropagation();
    this.titulo = event.target.value
-   console.log(this.titulo)
+
   }
 
   _handleAtualizaForm(event){
@@ -22,7 +21,9 @@ class FormularioCadastro extends Component {
   _criarNota(event){
     event.preventDefault();
     event.stopPropagation();
-  console.log(`Nova nota criada "${this.titulo}""${this.texto}"`)
+    this.props.criarNota(this.titulo, this.texto)
+    
+ 
   }
 
   render() {
