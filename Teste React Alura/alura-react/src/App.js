@@ -19,11 +19,21 @@ export default class App extends Component {
 
     this.setState(novoEstado);
   }
+  
+deletarNota(){
+  console.log("deletar")
+}
+
+
+
   render() {
     return (
       <section>
         <FormularioCadastro criarNota={this.criarNota.bind(this)} />
-        <ListaDeNotas notas={this.state.notas} />
+        <ListaDeNotas 
+        notas={this.state.notas}
+        apagarNota={this.deletarNota.bind(this)}
+        />
       </section>
     );
   }
