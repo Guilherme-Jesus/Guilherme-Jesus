@@ -3,6 +3,7 @@ import CardNota from "../CardNota";
 import "./style.css";
 
 class ListaDeNotas extends Component {
+
   render() {
     return (
       <ul className="card-nota">
@@ -10,6 +11,7 @@ class ListaDeNotas extends Component {
           return (
             <li key={index}>
               <CardNota
+                indice={index}
                 titulo={nota.titulo}
                 texto={nota.texto}
                 apagarNota={this.props.apagarNota}
