@@ -8,21 +8,21 @@ import ArrayNotas from "./dados/ArrayNotas";
 export default class App extends Component {
   constructor() {
     super();
-
     this.categorias = new Categorias();
     this.notas = new ArrayNotas();
+    
   }
 
   render() {
     return (
       <section>
-        <FormularioCadastro categorias={this.categorias.categorias}
+        <FormularioCadastro categorias={this.categorias}
          criarNota={this.notas.criarNota} 
          />
         <main className="conteudo-principal">
           <ListaDeCategorias
-            adicionarCategoria={this.categorias.adicionarCategoria}
-            categorias={this.categorias.categorias}
+            adicionarCategoria={this.categorias.adicionarCategoria.bind(this.categorias)}
+            categorias={this.categorias}
           />
           <ListaDeNotas
             apagarNota={this.notas.apagarNotas}
