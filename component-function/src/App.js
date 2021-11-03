@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Container from "@material-ui/core/Container";
-import FormularioCadastro from "./FormularioCadastro/FormularioCadastro";
+import FormularioCadastro from "./components/FormularioCadastro/FormularioCadastro";
 import { Typography } from "@material-ui/core";
 
 class App extends Component {
