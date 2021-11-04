@@ -23,7 +23,6 @@ function FormularioCadastro({ aoEnviar, validacoes }) {
 
   function coletarDados(dados) {
     setDados({ ...dadosColetados, ...dados });
-    console.log(dadosColetados);
     proximo();
   }
 
