@@ -4,7 +4,7 @@ import DadosDeEntrega from "./DadosDeEntrega";
 import DadosPessoais from "./DadosPessoais";
 import DadosUsuario from "./DadosUsuario";
 
-function FormularioCadastro({ aoEnviar, validarCPF }) {
+function FormularioCadastro({ aoEnviar, validacoes }) {
   const [etapaAtual, setEtapaAtual] = useState(0);
   const [dadosColetados, setDados] = useState({});
 
@@ -15,9 +15,9 @@ function FormularioCadastro({ aoEnviar, validarCPF }) {
   });
 
   const formularios = [
-    <DadosUsuario aoEnviar={coletarDados} />,
-    <DadosPessoais aoEnviar={coletarDados} validarCPF={validarCPF} />,
-    <DadosDeEntrega aoEnviar={coletarDados} />,
+    <DadosUsuario aoEnviar={coletarDados} validacoes={validacoes} />,
+    <DadosPessoais aoEnviar={coletarDados} validacoes={validacoes} />,
+    <DadosDeEntrega aoEnviar={coletarDados} validacoes={validacoes} />,
     <Typography variant="h5">Obrigado pelo Cadastro</Typography>,
   ];
 
@@ -30,14 +30,25 @@ function FormularioCadastro({ aoEnviar, validarCPF }) {
   function proximo() {
     setEtapaAtual(etapaAtual + 1);
   }
-  return <>
-  <Stepper activeStep={etapaAtual}>
-<Step><StepLabel>Login</StepLabel></Step>
-<Step><StepLabel>Dados Pessoais</StepLabel></Step>
-<Step><StepLabel>Entrega</StepLabel></Step>
-<Step><StepLabel>Finalização</StepLabel></Step>
-  </Stepper>
-  {formularios[etapaAtual]}</>;
+  return (
+    <>
+      <Stepper activeStep={etapaAtual}>
+        <Step>
+          <StepLabel>Login</StepLabel>
+        </Step>
+        <Step>
+          <StepLabel>Dados Pessoais</StepLabel>
+        </Step>
+        <Step>
+          <StepLabel>Entrega</StepLabel>
+        </Step>
+        <Step>
+          <StepLabel>Finalização</StepLabel>
+        </Step>
+      </Stepper>
+      {formularios[etapaAtual]}
+    </>
+  );
 }
 
 export default FormularioCadastro;
