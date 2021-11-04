@@ -4,3 +4,6 @@ package.json
 package-lock.json
 db.json
 yarn.lock
+reportWebVitals.js
+setupTests.js
+index.js
