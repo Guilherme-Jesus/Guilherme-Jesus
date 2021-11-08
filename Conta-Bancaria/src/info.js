@@ -5,14 +5,14 @@ export const extratoLista = {
       type: "Restaurante",
       value: "150,00",
       date: "11 JUN",
-      from: "Bonna Parma",
+      from: "Amareto",
     },
     {
       id: "4564654",
       type: "Utilidades",
       value: "130,00",
       date: "9 JUN",
-      from: "CPFL *energia",
+      from: "CEMIG *energia",
     },
     {
       id: "65445",
@@ -26,7 +26,7 @@ export const extratoLista = {
       type: "Transporte",
       value: "15,00",
       date: "8 JUN",
-      from: "Uber",
+      from: "Dubber",
     },
 
     {
