@@ -7,10 +7,10 @@ const Home = () => {
     <main>
       <div className="container">
         <h2 className="titulo-pagina">Pet notícias</h2>
-      </div>
+      </div>asdas
       <ListaCategorias />
       <ListaPost url={'/posts'} />
-    </main>
+    </main>ssss
     
   )
 }
