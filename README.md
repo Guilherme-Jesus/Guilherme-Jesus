@@ -9,7 +9,7 @@ Atualmente como Desenvolvedor Front End Jr em Zeus Agrotech.
 </p>
 
 <p align="left">
-  💻 Skills: <strong> React | Redux-Saga | APIs REST | Typescript | </strong>
+  💻 Skills: <strong> React | Redux | APIs REST | Typescript | </strong>
 </p>
 
 <p align="left">
