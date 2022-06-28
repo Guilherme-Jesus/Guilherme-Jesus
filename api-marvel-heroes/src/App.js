@@ -2,7 +2,7 @@ import "./App.css";
 
 import axios from "axios";
 import md5 from "md5";
-import {useEffect} from "react";
+import { useEffect } from "react";
 
 function App() {
   const PUBLIC_KEY = "0077f66a58ac1ed9db1b91d16a471101";
@@ -14,11 +14,12 @@ function App() {
 
   useEffect(() => {
     axios
-        .get(`${BASE_URL}characters?ts=${timeStamp}&apikey=${PUBLIC_KEY}&hash=${
-            hash}`)
-        .then((res) => console.log(res.data.data))
-        .catch((err) => console.log(err));
-  }, [ hash, timeStamp ]);
+      .get(
+        `${BASE_URL}characters?ts=${timeStamp}&apikey=${PUBLIC_KEY}&hash=${hash}`
+      )
+      .then((res) => console.log(res.data.data))
+      .catch((err) => console.log(err));
+  }, [hash, timeStamp]);
 }
 
 export default App;
