@@ -4,8 +4,7 @@ import ListaSuspensa from "../DropDownList";
 import TextInput from "../InputText";
 import "./Formulario.css";
 
-const Formulario = () => {
-  const team = ["Front-End", "Back-End", "Mobile", "Full-Stack", "UX/UI", "QA"];
+const Formulario = (props) => {
   const [newName, setNewName] = useState("");
   const [newOffice, setNewOffice] = useState("");
   const [newImage, setNewImage] = useState("");
@@ -13,7 +12,13 @@ const Formulario = () => {
 
   const handleSave = (e) => {
     e.preventDefault();
-    console.log("Salvando...", newName, newOffice, newImage, newTeam);
+    props.registeredCollaborator({
+      newName,
+      newOffice,
+      newImage,
+      newTeam,
+    });
+    console.log("Salvando...");
   };
 
   return (
@@ -43,7 +48,7 @@ const Formulario = () => {
         <ListaSuspensa
           required={true}
           label="Time"
-          itens={team}
+          itens={props.teamsNames}
           value={newTeam}
           toChanged={(value) => setNewTeam(value)}
         />
