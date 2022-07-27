@@ -5,14 +5,10 @@ import Colaborador from "../Collaborator";
 const Team = (props) => {
   return (
     <section
-      className="time"
-      style={{
-        backgroundColor: props.secondaryColor,
-      }}
-    >
-      <h3
+  className = "time"
+  style = {{ backgroundColor: props.secondaryColor, }} > < h3
         style={{
-          borderColor: props.primaryColor,
+    borderColor: props.primaryColor,
         }}
       >
         {props.name}
@@ -23,8 +19,8 @@ const Team = (props) => {
           office={collaborator.newOffice}
           image={collaborator.newImage}
         />
-      ))}{" "}
-    </section>
+      ))
+} {" "} < /section>
   );
 };
 
