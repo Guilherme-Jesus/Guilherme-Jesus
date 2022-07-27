@@ -1,6 +1,6 @@
 import "./Formulario.css";
 
-import {useState} from "react";
+import { useState } from "react";
 
 import Botao from "../Button";
 import ListaSuspensa from "../DropDownList";
@@ -35,24 +35,24 @@ const Formulario = (props) => {
           toChanged={(value) => setNewName(value)}
         />
         <TextInput
-  required = {true} label = "Cargo"
-  placeholder = "Digite o seu cargo"
-  value = {newOffice} toChanged =
-  {
-    (value) => setNewOffice(value)
-  } />
+          required={true}
+          label="Cargo"
+          placeholder="Digite o seu cargo"
+          value={newOffice}
+          toChanged={(value) => setNewOffice(value)}
+        />
         <TextInput
           label="Imagem"
           placeholder="Digite o endereço da imagem"
           value={newImage}
           toChanged={(value) => setNewImage(value)}
-        / >
-      < ListaSuspensa
-  required = {true} label = "Time"
+        />
+        <ListaSuspensa
+          required={true}
+          label="Time"
           itens={props.teamsNames}
           value={newTeam}
-          toChanged={
-    (value) => setNewTeam(value)}
+          toChanged={(value) => setNewTeam(value)}
         />
         <Botao>Criar Card</Botao>
       </form>
