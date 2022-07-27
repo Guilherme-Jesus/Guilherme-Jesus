@@ -1,8 +1,10 @@
+import "./Formulario.css";
+
 import { useState } from "react";
+
 import Botao from "../Button";
 import ListaSuspensa from "../DropDownList";
 import TextInput from "../InputText";
-import "./Formulario.css";
 
 const Formulario = (props) => {
   const [newName, setNewName] = useState("");

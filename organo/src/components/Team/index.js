@@ -1,5 +1,7 @@
-import Colaborador from "../Collaborator";
 import "./Team.css";
+
+import Colaborador from "../Collaborator";
+
 const Team = (props) => {
   return (
     <section className="time" style={{ backgroundColor: props.secondaryColor }}>

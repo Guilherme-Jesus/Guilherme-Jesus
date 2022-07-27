@@ -1,4 +1,5 @@
 import { useState } from "react";
+
 import Banner from "./components/Banner";
 import Formulario from "./components/Form";
 import Team from "./components/Team";
@@ -59,7 +60,7 @@ const App = () => {
           primaryColor={team.primaryColor}
           secondaryColor={team.secondaryColor}
         />
-      ))}
+      ))}{" "}
     </div>
   );
 };
