@@ -5,7 +5,6 @@ import Formulario from "./components/Form";
 import Team from "./components/Team";
 
 const App = () => {
-
   const teams = [
     {
       name: "Front-End",
@@ -63,7 +62,7 @@ const App = () => {
           collaborators={collaborator}
           
         />
-      ))}
+      ))}{" "}
     </div>
   );
 };
