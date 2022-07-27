@@ -5,14 +5,7 @@ import TextInput from "../InputText";
 import "./Formulario.css";
 
 const Formulario = () => {
-  const team = [
-    "Front-End",
-    "Back-End",
-    "Mobile",
-    "Full-Stack",
-    "UX/UI",
-    "QA",
-  ];
+  const team = ["Front-End", "Back-End", "Mobile", "Full-Stack", "UX/UI", "QA"];
   const [newName, setNewName] = useState("");
   const [newOffice, setNewOffice] = useState("");
   const [newImage, setNewImage] = useState("");
