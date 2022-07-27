@@ -61,6 +61,7 @@ const App = () => {
           primaryColor={team.primaryColor}
           secondaryColor={team.secondaryColor}
           collaborators={collaborator}
+          
         />
       ))}
     </div>
