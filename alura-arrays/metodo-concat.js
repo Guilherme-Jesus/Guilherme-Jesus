@@ -5,8 +5,12 @@ const salaDeJavascript = ["Ju", "Léo", "Raquel"];
 
 const salaDeAlunos = salaDePython.concat(salaDeJavascript); //concatena dois arrays;
 console.log(salaDeAlunos); // [Melissa,Helena,Rodrigo,Ju,Léo,Raquel]
-const arrayOriginal = ["Maria", "Carlos", "Eduardo", "Samanta"] ; // array original
-const arrayConcat = arrayOriginal.concat(["André", "Fernanda"], ["Ricardo", "Ana"], ["Marcelo", "Bia"]) ; // array concatenado
+const arrayOriginal = ["Maria", "Carlos", "Eduardo", "Samanta"]; // array original
+const arrayConcat = arrayOriginal.concat(
+  ["André", "Fernanda"],
+  ["Ricardo", "Ana"],
+  ["Marcelo", "Bia"]
+); // array concatenado
 
-console.log(arrayConcat)    // ["Maria", "Carlos", "Eduardo", "Samanta", "André", "Fernanda", "Ricardo", "Ana", "Marcelo", "Bia"]
-console.log(arrayOriginal)  // ["Maria", "Carlos", "Eduardo", "Samanta"]
+console.log(arrayConcat); // ["Maria", "Carlos", "Eduardo", "Samanta", "André", "Fernanda", "Ricardo", "Ana", "Marcelo", "Bia"]
+console.log(arrayOriginal); // ["Maria", "Carlos", "Eduardo", "Samanta"]
