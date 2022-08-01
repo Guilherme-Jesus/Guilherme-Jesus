@@ -7,7 +7,7 @@ function App() {
 
   const times = [
     {
-      nome: 'Programação',
+      nome: 'Back-End',
       corPrimaria: '#57C278',
       corSecundaria: '#D9F7E9'
     },
@@ -17,17 +17,12 @@ function App() {
       corSecundaria: '#E8F8FF'
     },
     {
-      nome: 'Data Science',
-      corPrimaria: '#A6D157',
-      corSecundaria: '#F0F8E2'
-    },
-    {
       nome: 'Devops',
       corPrimaria: '#E06B69',
       corSecundaria: '#FDE7E8'
     },
     {
-      nome: 'UX e Design',
+      nome: 'UI/UX',
       corPrimaria: '#DB6EBF',
       corSecundaria: '#FAE9F5'
     },
@@ -37,7 +32,7 @@ function App() {
       corSecundaria: '#FFF5D9'
     },
     {
-      nome: 'Inovação e Gestão',
+      nome: 'QA',
       corPrimaria: '#FF8A29',
       corSecundaria: '#FFEEDF'
     }
