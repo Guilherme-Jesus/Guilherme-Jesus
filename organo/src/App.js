@@ -1,69 +1,70 @@
-import { useState } from "react";
+import { useState } from 'react';
+import Banner from './componentes/Banner';
+import Formulario from './componentes/Formulario';
+import Time from './componentes/Time';
 
-import Banner from "./components/Banner";
-import Formulario from "./components/Form";
-import Team from "./components/Team";
+function App() {
 
-const App = () => {
-  const teams = [
+  const times = [
     {
-      name: "Front-End",
-      primaryColor: "#82CFFA",
-      secondaryColor: "#E8F8FF",
+      nome: 'Programação',
+      corPrimaria: '#57C278',
+      corSecundaria: '#D9F7E9'
     },
     {
-      name: "Back-End",
-      primaryColor: "#57C278",
-      secondaryColor: "#D9F7E9",
+      nome: 'Front-End',
+      corPrimaria: '#82CFFA',
+      corSecundaria: '#E8F8FF'
     },
     {
-      name: "Mobile",
-      primaryColor: "#FFBA05",
-      secondaryColor: "#FFF5D9",
+      nome: 'Data Science',
+      corPrimaria: '#A6D157',
+      corSecundaria: '#F0F8E2'
     },
     {
-      name: "UX/UI",
-      primaryColor: "#DB6EBF",
-      secondaryColor: "#FAE9F5",
+      nome: 'Devops',
+      corPrimaria: '#E06B69',
+      corSecundaria: '#FDE7E8'
     },
     {
-      name: "QA",
-      primaryColor: "#FF8A29",
-      secondaryColor: "#FFEEDF",
+      nome: 'UX e Design',
+      corPrimaria: '#DB6EBF',
+      corSecundaria: '#FAE9F5'
     },
     {
-      name: "DevOps",
-      primaryColor: "#E06B69",
-      secondaryColor: "#FDE7E8",
+      nome: 'Mobile',
+      corPrimaria: '#FFBA05',
+      corSecundaria: '#FFF5D9'
     },
-  ];
+    {
+      nome: 'Inovação e Gestão',
+      corPrimaria: '#FF8A29',
+      corSecundaria: '#FFEEDF'
+    }
+  ]
 
-  const [collaborator, setCollaborator] = useState([]);
+  const [colaboradores, setColaboradores] = useState([])
 
-  const handleAddedCollaborator = (contributor) => {
-    console.log(contributor);
-    setCollaborator([...collaborator, contributor]);
-  };
+  const aoNovoColaboradorAdicionado = (colaborador) => {
+    debugger
+    setColaboradores([...colaboradores, colaborador])
+  }
+
   return (
-    <div>
+    <div className="App">
       <Banner />
-      <Formulario
-        teamsNames={teams.map((team) => team.name)}
-        registeredCollaborator={(collaborator) =>
-          handleAddedCollaborator(collaborator)
-        }
-      />
-      {teams.map((team) => (
-        <Team
-          key={team.name}
-          name={team.name}
-          primaryColor={team.primaryColor}
-          secondaryColor={team.secondaryColor}
-          collaborators={collaborator}
-        />
-      ))}{" "}
+      <Formulario times={times.map(time => time.nome)} aoColaboradorCadastrado={colaborador => aoNovoColaboradorAdicionado(colaborador)}/>
+
+      {times.map(time => <Time 
+        key={time.nome} 
+        nome={time.nome} 
+        corPrimaria={time.corPrimaria} 
+        corSecundaria={time.corSecundaria} 
+        colaboradores={colaboradores.filter(colaborador => colaborador.time === time.nome)}
+      />)}   
+
     </div>
   );
-};
+}
 
 export default App;
