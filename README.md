@@ -22,7 +22,7 @@ Atualmente como Desenvolvedor Front End Jr em Zeus Agrotech.
 </p>
 <div>
 <a href="https://github.com/Guilherme-Jesus">
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=Guilherme-Jesus&show_icons=true&theme=gruvbox"/>
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Guilherme-Jesus&layout=compact&&theme=gruvbox"/>
+<img height="180em" src="https://github-readme-stats.vercel.app/api?username=Guilherme-Jesus&count_private=true&show_icons=true&theme=gruvbox"/>
+<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Guilherme-Jesus&count_private=true&layout=compact&&theme=gruvbox"/>
 <!-- <img height="180em" src="https://github-readme-stats.vercel.app/api?username=Guilherme-Jesus&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide=stars,issues,contribs"/> -->
 </div>
