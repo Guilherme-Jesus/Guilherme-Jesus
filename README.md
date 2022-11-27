@@ -5,7 +5,7 @@ Desenvolvedor Front-End
 </h2>
 
 <p align="left"> 
-Atualmente como Desenvolvedor Front End Jr em Zeus Agrotech.
+Atualmente como Desenvolvedor Front End em Zeus Agrotech.
 </p>
 
 <p align="left">
