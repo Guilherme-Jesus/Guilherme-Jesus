@@ -16,5 +16,5 @@
 <a href="https://github.com/Guilherme-Jesus">
 <img height="180em" src="https://github-readme-stats.vercel.app/api?username=Guilherme-Jesus&count_private=true&show_icons=true&theme=gruvbox"/>
  <img  height="180em" src="https://github-readme-streak-stats.herokuapp.com/?user=guilherme-jesus&" alt="guilherme-jesus" />
-<img height="180em" align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Guilherme-Jesus&count_private=true&layout=compact&&theme=gruvbox"/>
+<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Guilherme-Jesus&count_private=true&layout=compact&&theme=gruvbox"/>
 </div>
